@@ -1,9 +1,9 @@
 //
-//  ViewController.swift
+//  DetailsTableViewCell.swift
 //  Surya_Solution_test
 //
-//  Created by QuietGrowth pty ltd on 02/03/19.
-//  Copyright © 2019 Mrajsingh. All rights reserved.
+//  Created by Mraj singh on 28/02/19.
+//  Copyright © 2019 Mraj singh. All rights reserved.
 //
 
 import UIKit
