@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--LOGIN-->
         <scene sceneID="5fb-2Q-4po">
             <objects>
                 <viewController id="1Kf-Yt-CBI" customClass="LoginViewController" customModule="Surya_Solution_test" customModuleProvider="target" sceneMemberID="viewController">
@@ -79,7 +79,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BbN-6y-2U4"/>
                     </view>
-                    <navigationItem key="navigationItem" id="DvR-rz-Nmm"/>
+                    <navigationItem key="navigationItem" title="LOGIN" id="DvR-rz-Nmm"/>
                     <connections>
                         <outlet property="emailTF" destination="NNa-Ua-gbo" id="OX5-zY-KQL"/>
                         <outlet property="emailView" destination="HQJ-H9-Mvb" id="NSd-8q-fmF"/>
@@ -92,16 +92,16 @@
             </objects>
             <point key="canvasLocation" x="1804" y="-303.59820089955025"/>
         </scene>
-        <!--List Table View Controller-->
+        <!--PROFILE LIST-->
         <scene sceneID="Xmm-Zx-d01">
             <objects>
-                <tableViewController id="JTV-rQ-9FL" customClass="ListTableViewController" customModule="Surya_Solution_test" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="PROFILE LIST" id="JTV-rQ-9FL" customClass="ListTableViewController" customModule="Surya_Solution_test" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sX7-tc-nvC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailsTableViewCell" rowHeight="66" id="Jv9-x8-YT8" customClass="DetailsTableViewCell" customModule="Surya_Test" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailsTableViewCell" rowHeight="66" id="Jv9-x8-YT8" customClass="DetailsTableViewCell" customModule="Surya_Solution_test" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jv9-x8-YT8" id="UeY-be-OgL">
@@ -175,6 +175,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fnk-Xo-Q7o">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

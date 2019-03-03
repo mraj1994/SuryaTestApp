@@ -23,6 +23,9 @@ extension UIImageView {
                 let data = data, error == nil,
                 let image = UIImage(data: data)
                 else {
+                    DispatchQueue.main.async {
+                        self.image = UIImage(named: "no_image")
+                    }
                     print("Image not available")
                     return
             }
