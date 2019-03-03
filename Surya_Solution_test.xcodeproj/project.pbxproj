@@ -15,7 +15,7 @@
 		D13B8DF1222A921B00D8B07F /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13B8DF0222A921B00D8B07F /* ListTableViewController.swift */; };
 		D13B8DF3222A924D00D8B07F /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13B8DF2222A924D00D8B07F /* DetailsTableViewCell.swift */; };
 		D13B8DF5222A927E00D8B07F /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13B8DF4222A927E00D8B07F /* UIImageExtension.swift */; };
-		D13B8E01222A92F000D8B07F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D13B8DFF222A92F000D8B07F /* Main.storyboard */; };
+		EF84D058222BF72F0040C705 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF84D057222BF72F0040C705 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		D13B8DF0222A921B00D8B07F /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		D13B8DF2222A924D00D8B07F /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
 		D13B8DF4222A927E00D8B07F /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
-		D13B8E00222A92F000D8B07F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Downloads/Surya_Test 2/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		EF84D057222BF72F0040C705 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,14 +62,14 @@
 		D13B8DD4222A914E00D8B07F /* Surya_Solution_test */ = {
 			isa = PBXGroup;
 			children = (
+				EF84D059222BFCC00040C705 /* Utilitties */,
 				D13B8DED222A91AA00D8B07F /* Controllers */,
 				D13B8DD5222A914E00D8B07F /* AppDelegate.swift */,
 				D13B8DEE222A91E400D8B07F /* ItemDataModel.swift */,
+				EF84D057222BF72F0040C705 /* Main.storyboard */,
 				D13B8DDC222A915100D8B07F /* Assets.xcassets */,
-				D13B8DFF222A92F000D8B07F /* Main.storyboard */,
 				D13B8DDE222A915100D8B07F /* LaunchScreen.storyboard */,
 				D13B8DE1222A915100D8B07F /* Info.plist */,
-				D13B8DF4222A927E00D8B07F /* UIImageExtension.swift */,
 			);
 			path = Surya_Solution_test;
 			sourceTree = "<group>";
@@ -82,6 +82,14 @@
 				D13B8DF2222A924D00D8B07F /* DetailsTableViewCell.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EF84D059222BFCC00040C705 /* Utilitties */ = {
+			isa = PBXGroup;
+			children = (
+				D13B8DF4222A927E00D8B07F /* UIImageExtension.swift */,
+			);
+			path = Utilitties;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +150,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D13B8E01222A92F000D8B07F /* Main.storyboard in Resources */,
 				D13B8DE0222A915100D8B07F /* LaunchScreen.storyboard in Resources */,
 				D13B8DDD222A915100D8B07F /* Assets.xcassets in Resources */,
+				EF84D058222BF72F0040C705 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,14 +181,6 @@
 				D13B8DDF222A915100D8B07F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		D13B8DFF222A92F000D8B07F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D13B8E00222A92F000D8B07F /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -12,6 +12,8 @@ import UIKit
 
 extension UIImageView {
     
+    
+    //Downloading image from from link
     func dowloadFromServer(url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFill) {
         contentMode = mode
         URLSession.shared.dataTask(with: url) { data, response, error in

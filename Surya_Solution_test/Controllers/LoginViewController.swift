@@ -19,6 +19,7 @@ class LoginViewController: UIViewController {
     let urlToRequest = "http://surya-interview.appspot.com/list"
     var profileData: [Items]?
     
+    // Declaring the variable to cache data
     let cache = NSCache<NSString,NSArray>()
     
     
@@ -53,6 +54,8 @@ class LoginViewController: UIViewController {
     
     
     
+    
+    //Function for API call
     func dataRequest(email:String) {
         let url4 = URL(string: urlToRequest)!
         let session4 = URLSession.shared
@@ -87,6 +90,7 @@ class LoginViewController: UIViewController {
                     
                 }
                 self?.profileData = items
+                //Caching the data after first login
                 self?.cache.setObject(items as NSArray, forKey: "items" as NSString)
                 
             }
@@ -100,6 +104,7 @@ class LoginViewController: UIViewController {
         task.resume()
     }
     
+    //This converts string data to dictionary
     func convertToDictionary(text: String) -> [String: Any]? {
         if let data = text.data(using: .utf8) {
             do {
@@ -116,6 +121,8 @@ class LoginViewController: UIViewController {
 
 extension  LoginViewController {
     
+    
+    //This sets up login view
     func setUpViews(){
         logInButton.layer.cornerRadius = 3.0
         emailView.layer.cornerRadius = 4.0
